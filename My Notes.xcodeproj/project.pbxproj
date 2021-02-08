@@ -20,6 +20,7 @@
 		7F136BBC25CE289100CB4421 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F136BBB25CE289100CB4421 /* HomeViewModel.swift */; };
 		7F136BC625CE2A4F00CB4421 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F136BC525CE2A4F00CB4421 /* AppCoordinator.swift */; };
 		7F136BCB25CE2E3000CB4421 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F136BCA25CE2E3000CB4421 /* BaseViewController.swift */; };
+		7F899FCC25D1BBF200DFAB85 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7F899FCB25D1BBF200DFAB85 /* Localizable.strings */; };
 		DBB0516AF278809AFED1A6F3 /* Pods_My_Notes_My_NotesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFCC2EA2BD9722DFF5CAD65B /* Pods_My_Notes_My_NotesUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +64,9 @@
 		7F136BC525CE2A4F00CB4421 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		7F136BCA25CE2E3000CB4421 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		7F136C0525D16CAE00CB4421 /* networking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = networking.xcodeproj; path = ../networking/networking.xcodeproj; sourceTree = "<group>"; };
+		7F899FC525D1BB8000DFAB85 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		7F899FC925D1BB9600DFAB85 /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		7F899FCB25D1BBF200DFAB85 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		844CF60D367BDA282081FBF0 /* Pods-My NotesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My NotesTests.debug.xcconfig"; path = "Target Support Files/Pods-My NotesTests/Pods-My NotesTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D48DBAECB2D27B4CE9BE8076 /* Pods_My_NotesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_My_NotesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA37243CE9164FE58734EABD /* Pods-My Notes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My Notes.release.xcconfig"; path = "Target Support Files/Pods-My Notes/Pods-My Notes.release.xcconfig"; sourceTree = "<group>"; };
@@ -147,6 +151,7 @@
 		7F136B6125CE232600CB4421 /* My Notes */ = {
 			isa = PBXGroup;
 			children = (
+				7F899FCA25D1BBB000DFAB85 /* LocalizableStrings */,
 				7F136BA725CE265800CB4421 /* Protocols */,
 				7F136BD525D169B600CB4421 /* Features */,
 				7F136BCA25CE2E3000CB4421 /* BaseViewController.swift */,
@@ -225,6 +230,14 @@
 				7F136C0525D16CAE00CB4421 /* networking.xcodeproj */,
 			);
 			path = Dependencies;
+			sourceTree = "<group>";
+		};
+		7F899FCA25D1BBB000DFAB85 /* LocalizableStrings */ = {
+			isa = PBXGroup;
+			children = (
+				7F899FCB25D1BBF200DFAB85 /* Localizable.strings */,
+			);
+			path = LocalizableStrings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -315,6 +328,8 @@
 			knownRegions = (
 				en,
 				Base,
+				"pt-BR",
+				"es-419",
 			);
 			mainGroup = 7F136B5625CE232600CB4421;
 			productRefGroup = 7F136B6025CE232600CB4421 /* Products */;
@@ -334,6 +349,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F136B6F25CE232B00CB4421 /* LaunchScreen.storyboard in Resources */,
+				7F899FCC25D1BBF200DFAB85 /* Localizable.strings in Resources */,
 				7F136B6C25CE232B00CB4421 /* Assets.xcassets in Resources */,
 				7F136BB425CE280900CB4421 /* HomeViewController.xib in Resources */,
 			);
@@ -474,6 +490,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				7F136B6E25CE232B00CB4421 /* Base */,
+				7F899FC525D1BB8000DFAB85 /* pt-BR */,
+				7F899FC925D1BB9600DFAB85 /* es-419 */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -485,6 +503,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -546,6 +565,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

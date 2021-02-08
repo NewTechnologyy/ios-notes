@@ -9,4 +9,5 @@ import Foundation
 
 class HomeViewModel: NSObject {
     
+    let title = NSLocalizedString("home_title", comment: "")
 }

@@ -10,7 +10,7 @@ import UIKit
 class HomeViewController: BaseViewController<HomeViewModel> {
     
     override func viewDidLoad() {
-        debugPrint(self.viewModel)
+        self.title = viewModel.title
     }
     
 }

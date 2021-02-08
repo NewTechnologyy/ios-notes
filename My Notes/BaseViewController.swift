@@ -8,11 +8,11 @@
 import Foundation
 import UIKit
 
-class BaseViewController <T: AnyObject>: UIViewController {
+class BaseViewController <T: NSObject>: UIViewController {
     
     typealias ViewModel = T
     
-    var viewModel: ViewModel?
+    let viewModel: ViewModel = ViewModel()
     var coordinator: Coordinator?
     
     init(coordinator: Coordinator) {

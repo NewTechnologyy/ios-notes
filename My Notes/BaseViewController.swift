@@ -8,16 +8,17 @@
 import Foundation
 import UIKit
 
-class BaseViewController <T: NSObject>: UIViewController {
+class BaseViewController <T: NSObject, C: Any>: UIViewController {
     
     typealias ViewModel = T
+    typealias GCoordinator = C
     
     let viewModel: ViewModel = ViewModel()
-    var coordinator: Coordinator?
+    let coordinator: GCoordinator
     
-    init(coordinator: Coordinator) {
-        super.init(nibName: nil, bundle: nil)
+    init(coordinator: GCoordinator) {
         self.coordinator = coordinator
+        super.init(nibName: nil, bundle: nil)
     }
     
     required init?(coder: NSCoder) {

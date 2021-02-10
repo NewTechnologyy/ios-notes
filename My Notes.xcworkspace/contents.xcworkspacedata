@@ -2,9 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/leonardoamaralamaral/Documents/Projects/ios-notes/networking/NetWorking.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:My Notes.xcodeproj">
    </FileRef>
    <FileRef
